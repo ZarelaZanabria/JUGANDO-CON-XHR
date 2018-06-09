@@ -9,7 +9,7 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
     responseContainer.innerHTML = '';
     searchedForxText = searchField.value;
-    //Invocando la funccion getNews para ello creamo la funcion
+    //Invocando la funccion getNews para ello se crear la función
     getNews();
 
 });
