@@ -17,7 +17,7 @@ form.addEventListener('submit', function (e) {
 function getNews() {
     //Creamos nuestro Objeto
     const articleRequest = new XMLHttpRequest();
-    articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q${searchedForxText}&api-key-<ff7c85d7a41e435b995fdccabd899a58>`);
+    articleRequest.open('GET', `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${searchedForxText}&api-key=ff7c85d7a41e435b995fdccabd899a58`);
     //La funcion onload se le asigna la funcion addNEws
     articleRequest.onload = addNews;
     //La funcion onerror tiene asignado la funcion handleError 
